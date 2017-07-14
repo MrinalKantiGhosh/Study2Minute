@@ -1,0 +1,77 @@
+body{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.headerClass{
+    text-align: left;
+    font-size: 30px;
+    font-stretch: condensed;
+    font-style: oblique;
+    color: #c47c7c;
+}
+
+
+
+
+.form1{
+    margin-top: 20px;
+    margin-left:-150px;
+    padding:20px;
+}
+
+
+
+.form2{
+    margin-top: 20px;
+    margin-left: 70px; 
+    margin-right: -150px;   
+}
+
+.form3{
+    margin-top: 20px;
+    margin-left:-150px;
+    padding:20px;
+}
+
+.form4{
+    margin-top: 35px;
+    margin-left: 70px; 
+    margin-right: -150px;
+}
+
+
+.mainSection center{
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.form1 a{
+    margin-left: 150px;   
+}
+
+.form2 a{
+    margin-left: 150px;   
+}
+
+.form3 a{
+    margin-left: 210px;   
+}
+
+.form4 a{
+    margin-left: 190px;   
+}
+
+.mainSection form a{
+     border-color: #33C3F0;
+    transition: background-color 1s;
+}
+
+.mainSection form a:hover{
+    background-color: #33C3F0;
+}
+
+.showTutorial{
+	marigin-left:150px;
+}

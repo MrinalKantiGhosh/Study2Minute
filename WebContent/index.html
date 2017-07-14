@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Study2minute</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+</head>
+<body>
+    <header class="headerClass">Study2minute</header>
+	<section class="mainSection">
+	    <div class="container">
+	        <div class="row">
+	            <div class="six columns">
+	                <div class="form1">
+	                    <center><b>Catagory Info</b></center>
+	                    <form method="get" action="Catagory_Save_Serv">  
+	                    <label>Catagory Name</label>
+	                    <input type="text" placeholder="Enter Catagory Name" name="catagory_name">
+	                    <br><br>
+	                    <input type="submit" value="Save" class="button button-primary">
+	                    <a class="button" href="showCATAGORY_TBL.jsp">Show Catagory Table</a>
+	                    </form>
+	                </div>
+	            </div>
+	            
+	            <div class="six columns">
+	                <div class="form2">
+	                    <center><b>SubCatagory Info</b></center>
+	                    <form action="SubCatagory_Save_Serv" method="get" >
+	                        <div class="row">
+	                            <div class="six columns">
+	                                <label>Sub-Catagory Name </label>
+	                                <input type="text" name="subcatagory_name" placeholder="Enter SubCatagory Name">
+	                            </div>
+	                            
+	                            <div class="six columns">
+	                                <label>Parent Catagory Id </label>
+	                                <input type="text" placeholder="Enter Parent Catagory ID" name = "catagory_id">
+	                            </div>
+	                        </div>
+	                            
+	                        <br><br>
+	                        <input type="submit" value="Save" class="button button-primary">
+	                        <a class="button" href="showSUBCATAGORY_TBL.jsp">Show Sub-Catagory Table</a>
+	                    </form>
+	                </div>
+	            </div>
+	        </div>
+	        
+	        <hr>
+	        
+	        <div class="row">
+	            <div class="six columns">
+	                <div class="form3">
+	                    <center><b>Author Info</b></center>
+	                    <form method="post" action="Author_Save_Serv">
+	                        <div class="row">
+	                            <div class="six columns">    
+	                                <label>Author Name </label>
+	                                <input type="text" placeholder="Enter Name of Author"   
+	                                name="author_name">
+	                            </div>
+	                            
+	                            <div class="six columns">
+	                                <label>Phone Number </label>
+	                                <input type="text" placeholder="Enter Phone Number" name="phone_number">
+	                            </div>
+	                        </div>
+	                    
+	                        <br><br>
+	                        
+	                        <div class="row">
+	                            <div class="six columns">
+	                                <label>Email-id </label><input type="email" placeholder="Enter Email-id" name="email_id">
+	                            </div>
+	                            
+	                            <div class="six columns">
+	                                <label>Bank Name </label>
+	                                <input type="text" placeholder="Enter Bank Name" name="bank_name">
+	                            </div>
+	                        </div>
+	                    
+	                        <br><br>
+	                        
+	                        <div class="row">
+	                            <div class="six columns">
+	                                <label>Branch Name </label>
+	                                <input type="text" placeholder="Enter Branch Name" name="branch_name">
+	                            </div>
+	                            
+	                            <div class="six columns">
+	                                <label>Account Number </label>
+	                                <input type="text" placeholder="Enter Account Number" name="account_number">
+	                            </div>
+	                        </div>
+	                        
+	                        <br><br>
+	                        
+	                        <div class="row">
+	                            <div class="six columns">
+	                                <label>Account Type </label>
+	                                <input type="text" placeholder="Enter Account Type" name="account_type">
+	                            </div>
+	                            
+	                            <div class="six columns">
+	                                <label>IFSC Number </label>
+	                                <input type="text" placeholder="Enter IFSC Number" name="IFSC_number">
+	                            </div>
+	                        </div>
+	                        
+	                        <br><br>
+	                        <input type="submit" value="Save" class="button button-primary">
+	                        <a class="button" href="showAUTHOR_TBL.jsp">Show Author Table</a>
+	                    </form>
+	                </div>
+	            </div>
+	            
+	            <div class="six columns">
+	               <div class="form4">   
+	                   <center><b>Article Info</b></center>
+	                    <form method="post" action="Article_Save_Serv" enctype="multipart/form-data">
+	                        <div class="row">
+	                        
+	                        	<div class="six columns">
+	                                <label>Article title </label>
+	                                <input type="text" placeholder="Enter Title of Article" name="article_title">
+	                            </div>
+	                                           
+	                            <div class="six columns">
+	                                <label>Sub-Catagory Id </label> 
+	                                <input type="text" placeholder="Enter SubCatagory Id" name = "subcatagory_id">
+	                            </div>
+	                        </div>
+	                            
+	                        <br><br>
+	                        
+	                        <div class="row">
+	                            <div class="six columns">    
+	                                <label>Author Id </label>
+	                                <input type="text" placeholder="Enter Author Id" name="author_id">
+	                            </div>
+	                            
+	                             <div class="six columns">
+	                                <label>Insert Article </label>
+	                                <input type="file" name="pdf_loc" accept=".pdf">
+	                            </div>
+	                            
+	                        </div>	       	                           
+	                        <br><br>
+	                        <input type="submit" value="Save" class="button button-primary">
+	                        <a class="button" href="showARTICLE_TBL.jsp">Show Article Table</a>
+	                    </form>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+   	</section>
+   	
+   	<section>
+   		<div class="container">
+   			<div class="eleven columns">
+   				<a class="button button-primary showTutorial" href="showDynamic.jsp">Show Tutorials</a>
+   				
+   			</div>
+   		</div>
+   	</section>
+</body>
+</html>
